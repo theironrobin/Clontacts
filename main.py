@@ -26,7 +26,7 @@ def main(args):
 
     x = 1
     while x < i:
-        subprocess.call(["cat", "output/" + str(x) + ".vcf"])
+        subprocess.call(["syncevolution", "--import", "output/" + str(x) + ".vcf", "backend=evolution-contacts"])
         x += 1 
 
 
